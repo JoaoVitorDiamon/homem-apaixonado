@@ -1,4 +1,14 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
+import dia1 from './assets/dia-1.jpeg'
+import dia2 from './assets/dia-2.jpeg'
+import dia3 from './assets/dia-3.jpeg'
+import dia4 from './assets/dia-4.jpeg'
+import dia5 from './assets/dia-5.jpeg'
+import dia6 from './assets/dia-6.jpeg'
+import atacama from './assets/atacama.webp'
+import paris from './assets/paris.jpg'
+import allianz from './assets/allianz.jpg'
+import tvd from './assets/tvd.jpg'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Scroll Reveal
@@ -282,37 +292,37 @@ function Tela02({ onNext }: { onNext: () => void }) {
 
 const MEMORIES = [
   {
-    url: './src/assets/dia-1.jpeg',
+    url: dia1,
     caption: 'Você provavelmente não lembra desse dia. Eu lembro.',
     type: 'tall',
     align: 'left',
   },
   {
-    url: './src/assets/dia-2.jpeg',
+    url: dia2,
     caption: 'Esse foi um dia que tudo mudou.',
     type: 'tall',
     align: 'right',
   },
   {
-    url: './src/assets/dia-3.jpeg',
+    url: dia3,
     caption: 'Não aconteceu nada de extraordinário aqui. Mas foi importante pois eu tinha você.',
     type: 'polaroid',
     align: 'right',
   },
   {
-    url: './src/assets/dia-4.jpeg',
+    url: dia4,
     caption: 'Passar a tarde com voce foi a melhor coisa que eu fiz nesse ano.',
     type: 'tall',
     align: 'left',
   },
   {
-    url: './src/assets/dia-5.jpeg',
+    url: dia5,
     caption: 'Esse dia foi um dos melhores que eu passei com você.',
     type: 'wide',
     align: 'center',
   },
   {
-    url: './src/assets/dia-6.jpeg',
+    url: dia6,
     caption: 'Ela é feita de um monte de momentos que, certamente, nunca serão esquecidos.',
     type: 'polaroid',
     align: 'left',
@@ -639,10 +649,10 @@ function Cap04() {
 // ─────────────────────────────────────────────────────────────────────────────
 
 const BEYOND_IMGS = [
-  { url: './src/assets/atacama.webp', label: 'lugares' },
-  { url: './src/assets/paris.jpg', label: 'comida' },
-  { url: './src/assets/allianz.jpg', label: 'um dia qualquer' },
-  { url: './src/assets/tvd.jpg', label: 'manhãs' },
+  { url: atacama, label: 'lugares' },
+  { url: paris, label: 'comida' },
+  { url: allianz, label: 'um dia qualquer' },
+  { url: tvd, label: 'manhãs' },
 ]
 
 const BEYOND_LINES = [
@@ -1172,9 +1182,9 @@ function Cap11() {
 // ─────────────────────────────────────────────────────────────────────────────
 
 const FUTURE_IMGS = [
-  { url: './src/assets/atacama.webp', label: 'o que vem depois' },
-  { url: './src/assets/paris.jpg', label: 'lugares' },
-  { url: './src/assets/allianz.jpg', label: 'momentos' },
+  { url: atacama, label: 'o que vem depois' },
+  { url: paris, label: 'lugares' },
+  { url: allianz, label: 'momentos' },
 ]
 
 function Cap12() {
@@ -1332,7 +1342,7 @@ function Final({ onRestart }: { onRestart: () => void }) {
             }}
           >
             <img
-              src="./src/assets/dia-6.jpeg"
+              src={dia6}
               alt="nós"
               style={{ height: 380 }}
               loading="lazy"
